@@ -35,7 +35,7 @@ public class MainController {
     @GetMapping("/registration")
     public String showSignUpForm(Model model){
         model.addAttribute("user", new User());
-        return "/registration";
+        return "registration";
     }
 
     @PostMapping("/process_registration")
