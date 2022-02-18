@@ -47,7 +47,7 @@ public class MainController {
         user.setStatus(true);
         user.setDateRegistration(date);
         userRepository.save(user);
-        return "/register_success";
+        return "register_success";
     }
 
     @GetMapping("/users")
